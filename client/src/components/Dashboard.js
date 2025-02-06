@@ -17,7 +17,7 @@ const Dashboard = () => {
           return;
         }
 
-        const res = await axios.get('https://iu-codelab.onrender.com/api/auth/user', {
+        const res = await axios.get('http://localhost:5000/api/auth/user', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUser(res.data);
@@ -29,7 +29,7 @@ const Dashboard = () => {
     // Fetch programming languages data
     const fetchLanguages = async () => {
       try {
-        const res = await axios.get('https://iu-codelab.onrender.com/api/courses'); // Replace with your API endpoint
+        const res = await axios.get('http://localhost:5000/api/courses'); // Replace with your API endpoint
         setLanguages(res.data);
       } catch (error) {
         console.error('Error fetching programming languages:', error);

@@ -28,7 +28,7 @@ const Register = () => {
         setLoading(false);
         return;
       }
-      const res = await axios.post('https://iu-codelab.onrender.com/api/auth/register', formData);
+      const res = await axios.post('http://localhost:5000/api/auth/register', formData);
       alert(res.data.message || 'Registration successful! Please log in.');
       navigate('/login'); // Redirect to login page after registration
       setLoading(false); // Stop loading

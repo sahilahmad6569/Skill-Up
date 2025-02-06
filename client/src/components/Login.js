@@ -17,7 +17,7 @@ const Login = ({ setIsAuthenticated }) => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post('https://iu-codelab.onrender.com/api/auth/login', formData);
+      const res = await axios.post('http://localhost:5000/api/auth/login', formData);
       localStorage.setItem('token', res.data.token);
       alert('Login successful!');
       setIsAuthenticated(true); // Directly update authentication state

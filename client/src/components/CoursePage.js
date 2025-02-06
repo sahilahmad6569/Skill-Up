@@ -26,7 +26,7 @@ const CoursePage = () => {
   useEffect(() => {
     const fetchCourse = async () => {
       try {
-        const res = await axios.get(`https://iu-codelab.onrender.com/api/course/${courseId}`);
+        const res = await axios.get(`http://localhost:5000/api/course/${courseId}`);
         setCourse(res.data);
       } catch (err) {
         setError('Error fetching course data');
@@ -40,7 +40,7 @@ const CoursePage = () => {
 
   const handleExecuteCode = async () => {
     try {
-      const res = await axios.post(`https://iu-codelab.onrender.com/api/execute`, {
+      const res = await axios.post(`http://localhost:5000/api/execute`, {
         code: terminalInput,
         language: selectedLanguage, // Using selected language
       });
@@ -54,7 +54,7 @@ const CoursePage = () => {
     setIsLoading(true);
     setError(false);
     try {
-      const res = await axios.post(`https://iu-codelab.onrender.com/api/askAI`, {
+      const res = await axios.post(`http://localhost:5000/api/askAI`, {
         question: aiQuestion,
       });
       setAiOutput(res.data.response);
