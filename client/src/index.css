@@ -1,0 +1,49 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4;  /* Light background */
+  color: #333;  /* Dark text for contrast */
+}
+
+
+/* Add this CSS to your global styles (e.g., App.css or index.css) */
+
+/* For WebKit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937; /* Dark background for the track */
+  border-radius: 6px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6; /* Blue scrollbar thumb */
+  border-radius: 6px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb; /* Darker blue on hover */
+}
+
+/* For Firefox (scrollbar styling in Firefox is different) */
+* {
+  scrollbar-width: thin; /* Make scrollbar thin */
+  scrollbar-color: #3b82f6 #1f2937; /* Thumb color and track color */
+}
+
+iframe {
+  border: none;
+}
+
+
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
