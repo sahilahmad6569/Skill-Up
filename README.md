@@ -55,7 +55,7 @@ academic and professional learning needs.
 ## **Project Structure**
 
 ```
-IU-CodeLab/
+Skill-Up/
 ├── client/               # Frontend code
 │   ├── src/              # React source files
 │   ├── public/           # Public assets
@@ -67,6 +67,7 @@ IU-CodeLab/
 │   └── server.js         # Entry point
 ├── database/             # Database initialization scripts
 ├── tests/                # Automated test cases
+├── LICENSE               # Project License
 └── README.md             # Project documentation
 ```
 
@@ -74,10 +75,10 @@ IU-CodeLab/
 
 ## **Screenshots**
 
-Explore IU CodeLab through the following key interface sections:
+Explore Skill Up through the following key interface sections:
 
 ### 1. **Homepage**  
-**Description**: The starting point of IU CodeLab, showcasing all available courses with a clean and user-friendly design for easy navigation.  
+**Description**: The starting point of Skill Up, showcasing all available courses with a clean and user-friendly design for easy navigation.  
 **Preview**:  
 ![Homepage](screenshots/homepage.png "Homepage Screenshot")
 
@@ -233,8 +234,8 @@ The project follows a modular architecture pattern with clearly defined responsi
 ### **Installation Steps**
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/sahilahmad6569/IU-CodeLab.git
-   cd IU-CodeLab
+   git clone https://github.com/sahilahmad6569/Skill-Up.git
+   cd Skill-Up
    ```
 
 2. **Install Dependencies**:
@@ -288,11 +289,11 @@ The project follows a modular architecture pattern with clearly defined responsi
 
 ## **Contribution Guidelines**
 
-We welcome contributions from the community to make IU CodeLab even better! Follow these steps to contribute:
+We welcome contributions from the community to make Skill Up even better! Follow these steps to contribute:
 
 1. **Fork the Repository**:
    ```bash
-   git fork https://github.com/sahilahmad6569/IU-CodeLab.git
+   git fork https://github.com/sahilahmad6569/Skill-Up.git
    ```
 
 2. **Create a New Branch**:
@@ -326,6 +327,8 @@ For any inquiries, feedback, or collaboration opportunities, feel free to reach 
 
 ## **License**
 
-This project is licensed under the MIT License.  
+This project is licensed under the **MIT License** – see the [LICENSE](./LICENSE) file for details.
+
+![MIT License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ---
